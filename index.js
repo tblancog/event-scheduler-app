@@ -57,7 +57,7 @@ const event = {
     },
   },
 
-  attendees: [{ email: "tblanco82@gmail.com" }],
+  attendees: [{ email: process.env.EMAIL }],
 };
 
 app.get("/create-event", async (req, res) => {
